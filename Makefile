@@ -1,4 +1,3 @@
 
 build:
-	mkdir bin
-	gcc rsRNASP.c -lm -o bin/rsRNASP
+	gcc rsRNASP.c -lm -o rsRNASP
