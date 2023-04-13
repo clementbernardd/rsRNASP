@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
  FILE *atom_type;
  iii=0;
  memset(atomtype,0,sizeof(atomtype));
- atom_type=fopen("data/85atom_type.dat","r+");
+ atom_type=fopen("lib/rs_rnasp/data/85atom_type.dat","r+");
  while(!feof(atom_type))
  {
   fscanf(atom_type,"%s\n",atomtype[iii]);
@@ -125,8 +125,8 @@ int main(int argc, char *argv[])
 //potential
 /////////////////////////////////////////////////////////
  double ***potential1, ***potential2;
- potential1 = read_potential("data/short-ranged.potential", intervals1);
- potential2 = read_potential("data/long-ranged.potential", intervals2);
+ potential1 = read_potential("lib/rs_rnasp/data/short-ranged.potential", intervals1);
+ potential2 = read_potential("lib/rs_rnasp/data/long-ranged.potential", intervals2);
 /////////////////////////////////////////////////////////
 
 //read_pdb
