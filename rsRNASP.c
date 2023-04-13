@@ -204,9 +204,6 @@ int main(int argc, char *argv[])
  
  energy = energy1 + 16.0*energy2/fun(length);
  
- FILE *FP;
- FP = fopen(argv[2],"a+");
- fprintf(FP,"%s     %lf kBT\n", argv[1], energy);
  
 /////////////////////////////////////////////////////////
 
@@ -227,7 +224,7 @@ int main(int argc, char *argv[])
 
   end = clock();
   spendtime = (float)(end-start)/(CLOCKS_PER_SEC);
-  printf("the spendtime is %f s.\n",spendtime);
+  printf("%f \n",energy);
 
   return 6;
 }
