@@ -226,7 +226,7 @@ int main(int argc, char *argv[])
   spendtime = (float)(end-start)/(CLOCKS_PER_SEC);
   printf("%f \n",energy);
 
-  return 6;
+  return 0;
 }
 
 
